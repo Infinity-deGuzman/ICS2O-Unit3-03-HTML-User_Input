@@ -13,7 +13,7 @@ function doMathClicked () {
   const radius = parseFloat(document.getElementById('radius').value)
 
   // process
-  const volume = (4 / 3) * (radius ** 3) * π
+  const volume = ((4 / 3) * (radius ** 3) * 3.14159265)
 
   //output
   document.getElementById('volume').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' cm³'
