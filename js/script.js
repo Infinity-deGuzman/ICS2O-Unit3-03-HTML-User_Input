@@ -6,16 +6,14 @@
 
 "use strict"
 
-"use math"
-
-function enterClicked () {
+function doMathClicked () {
   // this code will calculate the volume of a sphere
 
   // input
-  const length = parseFloat(document.getElementById("radius").value)
+  const radius = parseFloat(document.getElementById("radius").value)
 
   // process
-  const volume = (4/3) * π * r**3
+  const volume = (4/3) * (radius ** 3) * π
 
   //output
   document.getElementById('volume').innerHTML = 'The volume is: ' + volume.toFixed(2) + ' cm³'
